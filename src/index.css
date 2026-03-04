@@ -1,0 +1,21 @@
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  overflow: hidden; /* blocca scroll */
+  font-family: system-ui, Arial, sans-serif;
+  background: #0b0f14;
+  color: white;
+}
+
+button{
+  padding: 10px 12px;
+  border: 1px solid #333;
+  background: #111822;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover{
+  background: #172235;
+}
