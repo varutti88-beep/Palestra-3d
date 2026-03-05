@@ -130,9 +130,13 @@ const PAGE_FLOW = [
 ];
 
 export default function App() {
-  const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
 
-  if (isMobile) {
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const isMobile = window.innerWidth < 900;
+
+  if (isMobile && !location.pathname.startsWith("/m")) {
     return <MobileApp />;
   }
 
