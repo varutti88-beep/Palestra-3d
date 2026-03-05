@@ -134,14 +134,18 @@ export default function App() {
   const navigate = useNavigate();
   const location = useLocation();
 
+  if (location.pathname.startsWith("/m")) {
+    return <MobileApp />;
+  }
+
   const isMobile = window.innerWidth < 900;
 
   if (isMobile && !location.pathname.startsWith("/m")) {
     return <MobileApp />;
   }
 
-  const navigate = useNavigate();
-  const location = useLocation();
+  // resto del tuo codice App
+}
 
   // remove “bordino bianco” + reset globale
   useEffect(() => {
