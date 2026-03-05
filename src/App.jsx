@@ -144,9 +144,6 @@ export default function App() {
     return <MobileApp />;
   }
 
-  // resto del tuo codice App
-}
-
   // remove “bordino bianco” + reset globale
   useEffect(() => {
     document.documentElement.style.height = "100%";
