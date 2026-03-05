@@ -1,5 +1,6 @@
 import React, { useEffect, useMemo, useState } from "react";
 import { Routes, Route, Navigate, useLocation, useNavigate } from "react-router-dom";
+import MobileApp from "./MobileApp";
 
 /**
  * PROGETTO PALESTRA 2 — App.jsx unico
@@ -129,6 +130,12 @@ const PAGE_FLOW = [
 ];
 
 export default function App() {
+  const isMobile = window.innerWidth < 768;
+
+  if (isMobile) {
+    return <MobileApp />;
+  }
+
   const navigate = useNavigate();
   const location = useLocation();
 
