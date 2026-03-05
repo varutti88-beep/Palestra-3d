@@ -40,3 +40,12 @@
 .read-the-docs {
   color: #888;
 }
+@media (max-width: 768px) {
+  .container,
+  .dashboard,
+  .panel,
+  .card {
+    width: 100%;
+    flex-direction: column;
+  }
+}

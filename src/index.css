@@ -1,7 +1,7 @@
 html, body, #root {
   height: 100%;
   margin: 0;
-  overflow: hidden; /* blocca scroll */
+  overflow: auto; /* permette scroll su telefono */
   font-family: system-ui, Arial, sans-serif;
   background: #0b0f14;
   color: white;
@@ -18,4 +18,22 @@ button{
 
 button:hover{
   background: #172235;
+}
+
+/* contenitore principale */
+#root {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+/* miglioramento mobile */
+@media (max-width: 768px) {
+
+  button{
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+  }
+
 }
