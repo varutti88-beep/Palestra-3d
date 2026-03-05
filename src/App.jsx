@@ -841,7 +841,7 @@ function DashboardPage({ workouts, onAddWorkout, onUpdateWorkout, onDeleteWorkou
             <div style={{ fontWeight: 950, marginBottom: 6 }}>Assistente</div>
             <div style={{ fontSize: 13, opacity: 0.9, lineHeight: 1.4 }}>
               <div style={{ marginTop: 6, opacity: 0.85 }}>
-                IN MANUTENZIONE
+                IN MANUTENZIONE APP DI VARUTTI GABRIELE
               </div>
             </div>
           </div>
@@ -1068,7 +1068,7 @@ function ProgressPage({ workouts }) {
           </div>
 
           <div style={{ marginTop: 10, fontSize: 12, opacity: 0.8 }}>
-            Score = kg × rip (metrica semplice). Se vuoi poi facciamo PR “kg max”, “1RM stimato” ecc.
+            Score = kg × rip
           </div>
         </div>
       </div>
